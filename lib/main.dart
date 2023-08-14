@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_learn/101/appBar.dart';
+import 'package:flutter_learn/101/color_learn.dart';
 import 'package:flutter_learn/101/container_sized_box_learn.dart';
 import 'package:flutter_learn/101/text_learn.dart';
 
+import '101/button_learn.dart';
+import '101/icon_learn.dart';
 import '101/scaffold_learn.dart';
 
 void main() {
@@ -17,13 +21,20 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Veli Dayı',
 
-      theme: ThemeData.dark(),
+      theme: ThemeData.dark().copyWith(
+        errorColor: ColorItems.sulu,
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.transparent,
+          elevation: 0,
+          centerTitle: true,
+        ),
+      ),
       //(
 
       // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrangeAccent),
       // useMaterial3: true,
       // ),
-      home: ScaffoldLearn(),
+      home: ColorLearn(),
     );
   }
 }

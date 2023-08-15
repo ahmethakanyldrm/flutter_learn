@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_learn/101/color_learn.dart';
 
 import '101/image_learn.dart';
+import 'demos/note_demos_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
       // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrangeAccent),
       // useMaterial3: true,
       // ),
-      home: ImageLearn(),
+      home: NoteDemosView(),
     );
   }
 }

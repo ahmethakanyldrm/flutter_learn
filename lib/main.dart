@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_learn/101/color_learn.dart';
+import 'package:flutter_learn/101/navigation_learn.dart';
 import 'package:flutter_learn/101/page_view_learn.dart';
 import 'package:flutter_learn/101/text_learn.dart';
+import 'package:flutter_learn/demos/color_demos_view.dart';
+import 'package:flutter_learn/demos/color_life_cycle.dart';
 
 import '101/image_learn.dart';
+import '101/list_view_builder.dart';
+import '101/listview_learn.dart';
 import '101/statefull_learn.dart';
 import '101/statefull_life_cycle.dart';
 import '101/text_field_learn.dart';
+import 'demos/my_collections_demos.dart';
 import 'demos/note_demos_view.dart';
 
 void main() {
@@ -51,7 +57,7 @@ class MyApp extends StatelessWidget {
       // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrangeAccent),
       // useMaterial3: true,
       // ),
-      home: TextFieldLearn(),
+      home: NavigationLearn(),
     );
   }
 }

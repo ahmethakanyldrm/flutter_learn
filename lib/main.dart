@@ -3,6 +3,8 @@ import 'package:flutter_learn/101/color_learn.dart';
 import 'package:flutter_learn/101/navigation_learn.dart';
 import 'package:flutter_learn/101/page_view_learn.dart';
 import 'package:flutter_learn/101/text_learn.dart';
+import 'package:flutter_learn/202/model_learn_view.dart';
+import 'package:flutter_learn/202/tab_learn.dart';
 import 'package:flutter_learn/demos/color_demos_view.dart';
 import 'package:flutter_learn/demos/color_life_cycle.dart';
 
@@ -29,6 +31,11 @@ class MyApp extends StatelessWidget {
       title: 'Veli Dayı',
 
       theme: ThemeData.dark().copyWith(
+        tabBarTheme: TabBarTheme(
+          labelColor: Colors.white,
+          unselectedLabelColor: Colors.red,
+          indicatorSize: TabBarIndicatorSize.label,
+        ),
         errorColor: ColorItems.sulu,
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.transparent,
@@ -57,7 +64,7 @@ class MyApp extends StatelessWidget {
       // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrangeAccent),
       // useMaterial3: true,
       // ),
-      home: NavigationLearn(),
+      home: ModelLearn(),
     );
   }
 }
